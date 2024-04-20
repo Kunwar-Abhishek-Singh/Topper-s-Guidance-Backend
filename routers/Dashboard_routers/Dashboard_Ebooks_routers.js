@@ -1,0 +1,5 @@
+const express = require ('express')
+const router = express.Router()
+const dashboard_ebooks = require("../../Controllers/Dashboard/DashboardEbooksController")
+const dashboard_ebooks_model = require('../../Model/Dashboard_model/Dashboard_eBooks_model')
+router.get("/dashboard_ebooks",dashboard_ebooks.get_dashboard_ebooks)

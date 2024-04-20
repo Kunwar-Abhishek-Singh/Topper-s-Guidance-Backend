@@ -1,0 +1,5 @@
+const express = require('express')
+const router = express.Router()
+const dashboard_related_post = require("../../Controllers/Dashboard/DashboardRelatedPostsController")
+const dashboard_related_post_model = require("../../Model/Dashboard_model/Dashboard_related_post_model")
+router.get("/dashboard_related_post",dashboard_related_post.get_dashboard_related_post)
